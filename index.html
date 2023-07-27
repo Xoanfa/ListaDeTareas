@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Lista de la compra" />
+    <title>Lista de la compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Lista de tareas</h1>
+    <form>
+      <fieldset>
+        <ul>
+          <li>
+            <label for="tarea">Tarea:</label>
+            <input
+              type="text"
+              id="tarea"
+              name="tarea"
+              maxlength="50"
+              autocomplete="off"
+            />
+            <button>➕</button>
+          </li>
+          <li>
+            <label for="prioridad">Prioridad:</label>
+            <select id="prioridad" name="prioridad">
+              <option value="normal">Normal</option>
+              <option value="importante">Importante</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <article>
+      <ul id="listaTareas">
+        <!-- Aquí se agregarán las tareas con JavaScript -->
+      </ul>
+    </article>
+    <button type="button" id="limpiarTareasHechas">
+      Limpiar Tareas Completadas
+    </button>
+    <button type="button" id="limpiarTareas">Limpiar todas las tareas</button>
+    <script src="script2.js"></script>
+  </body>
+</html>
