@@ -1,2 +1,1 @@
-# ListaDeTareas
-Proyecto de lista de tareas.
+Proyecto Bootcamp de una lista de tareas.
